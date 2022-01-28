@@ -1,0 +1,164 @@
+1.What does the man command do? Type in man rm. How do you scroll and get out?
+
+A: man is the "manual" command. It is usually entered with another terminal command to display the user manual. It explains in detail what a command does and how to properly use it.
+
+Typing man in Git Bash on Windows displays an error message. However, help on a command can be displayed by entering the command followed by a space and --help
+Typing man in powershell throws this result
+
+PS C:\Users\danie> man
+
+TEMA
+    Sistema de ayuda de Windows PowerShell
+
+DESCRIPCIÓN BREVE
+    Muestra ayuda acerca de los cmdlets y los conceptos de Windows PowerShell. 
+
+DESCRIPCIÓN LARGA
+    En la ayuda de Windows PowerShell se describen los cmdlets, las funciones,
+    los scripts y los módulos de Windows PowerShell y se explican conceptos,
+    incluidos los elementos del lenguaje Windows PowerShell.
+
+    Windows PowerShell no incluye archivos de ayuda, pero puede leer los
+    temas de ayuda en línea o usar el cmdlet Update-Help para descargar archivos de ayuda
+    en el equipo y, a continuación, usar el cmdlet Get-Help para mostrar los temas
+    de ayuda en la línea de comandos.
+
+    También puede usar el cmdlet Update-Help para descargar archivos de ayuda
+    actualizados a medida que se publiquen, para que el contenido de ayuda local nunca se quede obsoleto. 
+
+    Sin archivos de ayuda, Get-Help obtiene ayuda generada automáticamente para los cmdlets, 
+    las funciones y los scripts.
+
+
+  AYUDA EN LÍNEA    
+    Encontrará ayuda en línea para Windows PowerShell en la Biblioteca de TechNet,
+    a partir de http://go.microsoft.com/fwlink/?LinkID=108518. 
+
+    Para abrir la ayuda en línea de cualquier cmdlet o función, escriba:
+
+        Get-Help <nombreDelCmdlet> -Online    
+
+  UPDATE-HELP
+    Para descargar e instalar los archivos de ayuda en el equipo:
+
+       1. Inicie Windows PowerShell con la opción "Ejecutar como administrador".
+PS C:\Users\danie> man
+
+
+TEMA
+    Sistema de ayuda de Windows PowerShell
+
+DESCRIPCIÓN BREVE
+    Muestra ayuda acerca de los cmdlets y los conceptos de Windows PowerShell.
+
+DESCRIPCIÓN LARGA
+    En la ayuda de Windows PowerShell se describen los cmdlets, las funciones,
+    los scripts y los módulos de Windows PowerShell y se explican conceptos,
+    incluidos los elementos del lenguaje Windows PowerShell.
+
+    Windows PowerShell no incluye archivos de ayuda, pero puede leer los
+    temas de ayuda en línea o usar el cmdlet Update-Help para descargar archivos de ayuda
+    en el equipo y, a continuación, usar el cmdlet Get-Help para mostrar los temas
+    de ayuda en la línea de comandos.
+
+    También puede usar el cmdlet Update-Help para descargar archivos de ayuda
+    actualizados a medida que se publiquen, para que el contenido de ayuda local nunca se quede obsoleto.
+
+    Sin archivos de ayuda, Get-Help obtiene ayuda generada automáticamente para los cmdlets,
+    las funciones y los scripts.
+
+
+  AYUDA EN LÍNEA
+    Encontrará ayuda en línea para Windows PowerShell en la Biblioteca de TechNet,
+    a partir de http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    Para abrir la ayuda en línea de cualquier cmdlet o función, escriba:
+
+        Get-Help <nombreDelCmdlet> -Online
+
+  UPDATE-HELP
+    Para descargar e instalar los archivos de ayuda en el equipo:
+
+       1. Inicie Windows PowerShell con la opción "Ejecutar como administrador".
+       2. Escriba:
+
+          Update-Help
+
+    Una vez instalados los archivos de ayuda, puede usar el cmdlet Get-Help para
+    mostrar los temas de ayuda. También puede usar el cmdlet Update-Help para
+    descargar archivos de ayuda actualizados, de modo que los archivos de
+    ayuda locales siempre estén actualizados.
+
+    Para obtener más información acerca del cmdlet Update-Help, escriba:
+
+       Get-Help Update-Help -Online
+
+    o vaya a: http://go.microsoft.com/fwlink/?LinkID=210614
+
+
+  GET-HELP
+    El cmdlet Get-Help muestra ayuda en la línea de comandos del contenido
+    de los archivos de ayuda del equipo. Sin archivos de ayuda, Get-Help muestra ayuda
+    básica acerca de los cmdlets y las funciones. También puede usar Get-Help para mostrar
+    ayuda en línea sobre los cmdlets y las funciones.
+
+    Para obtener ayuda sobre un cmdlet, escriba:
+
+        Get-Help <nombreDelCmdlet>
+
+    Para obtener ayuda en línea, escriba:
+
+        Get-Help <nombreDelCmdlet> -Online
+
+    Los títulos de los temas conceptuales empiezan con "About_".
+    Para obtener ayuda sobre un concepto o elemento del lenguaje, escriba:
+
+        Get-Help About_ <nombreDelTema>
+
+    Para buscar una palabra o frase en todos los archivos de ayuda, escriba:
+
+        Get-Help <términoDeBúsqueda>
+
+    Para obtener más información acerca del cmdlet Get-Help, escriba:
+
+
+
+  EJEMPLOS:
+      Save-Help              : descarga archivos de ayuda de Internet y los guarda
+                               en un recurso compartido de archivos.
+      Update-Help            : descarga e instala archivos de ayuda de
+                               Internet en un recurso compartido de archivos.
+      Get-Help Get-Process   : muestra ayuda acerca del cmdlet Get-Process.
+      Get-Help Get-Process -Online
+                             : abre la ayuda en línea del cmdlet Get-Process.
+      Help Get-Process       : muestra ayuda acerca de Get-Process, página por página.
+      Get-Process -?         : muestra ayuda acerca del cmdlet Get-Process.
+      Get-Help About_Modules : muestra ayuda acerca de los módulos de Windows PowerShell.
+      Get-Help remoting      : busca la palabra "remoting" en los temas de ayuda.
+
+  VÉASE TAMBIÉN:
+      about_Updatable_Help
+      Get-Help
+      Save-Help
+      Update-Help
+
+To quit the man command in powershell simply press Q on the keyboard
+
+2.Look at the man page for ls. What does the -l flag do? What does the -a flag do?
+
+The -l flag shows the listed elements in a longer listing format, including relevant information, like the last time an element was modified.
+The -a flag is used to tell the command it must include all the elements in the directory, including even hidden elements.
+
+Type the following command to download and save the contents of google.com: curl https://www.google.com > google.html
+Use less to look at the contents of google.html.
+Look at the man page for less. Read the section on /pattern. Search for the text hplogo in the google.html file.
+How do you jump between words in the terminal? ctrl + Cursor Left or right
+How do you get to the end of a line in terminal? prees key End
+How do you move your cursor to the beginning in terminal? Crtl + A
+How do you delete a word (without pressing backspace multiple times) in terminal? ctrl + bkspc
+What is the difference between a terminal and shell? The Shell is a program which processes commands and returns output, like Bash in Linux. A Terminal is a program that runs a Shell.
+What is an absolute path? absolute path specifies the location from the root directory.
+What is an relative path? relative path is related to the current directory.
+What is a flag? Give three examples of flags you have used. Flags are a way to set options and pass in arguments to the commands you run and alter their behavior.
+What do the r and f flags do with the rm command? -f means force: ignore nonexistent files and arguments, never prompt. -r means recursive:   remove directories and their contents recursively
+

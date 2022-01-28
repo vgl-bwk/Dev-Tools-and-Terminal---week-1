@@ -1,0 +1,83 @@
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ pwd
+/c/Users/danie
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ mkdir first
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ ls
+'3D Objects'/   Downloads/               NTUSER.DAT                                                                                     OneDrive/    
+ ansel/         Favorites/               ntuser.dat.LOG1                                                                                Pictures/    
+ AppData/       first/                   ntuser.dat.LOG2                                                                               'Saved Games'/
+ Autodesk/      IntelGraphicsProfiles/   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        Searches/    
+ Contacts/      Links/                   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   Videos/      
+ Desktop/       MicrosoftEdgeBackups/    NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ Documents/     Music/                   ntuser.ini
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ cd first
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ touch person.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ ls
+person.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ mv person.txt another.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ ls
+another.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ cp another.txt copy.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ ls
+another.txt  copy.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ rm copy.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ ls
+another.txt
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ cd..
+bash: cd..: command not found
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~/first
+$ cd ..
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ cp -r first second
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ ls
+'3D Objects'/   Downloads/               NTUSER.DAT                                                                                     OneDrive/
+ ansel/         Favorites/               ntuser.dat.LOG1                                                                                Pictures/
+ AppData/       first/                   ntuser.dat.LOG2                                                                               'Saved Games'/
+ Autodesk/      IntelGraphicsProfiles/   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        Searches/
+ Contacts/      Links/                   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   second/
+ Desktop/       MicrosoftEdgeBackups/    NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms   Videos/
+ Documents/     Music/                   ntuser.ini
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ rm -r second
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$ ls
+'3D Objects'/   Downloads/               NTUSER.DAT                                                                                     OneDrive/
+ ansel/         Favorites/               ntuser.dat.LOG1                                                                                Pictures/
+ AppData/       first/                   ntuser.dat.LOG2                                                                               'Saved Games'/
+ Autodesk/      IntelGraphicsProfiles/   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf                                        Searches/
+ Contacts/      Links/                   NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms   Videos/
+ Desktop/       MicrosoftEdgeBackups/    NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ Documents/     Music/                   ntuser.ini
+
+danie@LAPTOP-QPC7FIQC MINGW64 ~
+$
